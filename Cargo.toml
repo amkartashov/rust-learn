@@ -10,6 +10,10 @@ default-run = "rust-learn"
 [dependencies]
 rand = "0.8.3"
 
+[lib]
+name = "rust_learn"
+path = "src/lib.rs"
+
 [[bin]]
 name = "rust-learn"
 path = "src/main.rs"
@@ -17,3 +21,7 @@ path = "src/main.rs"
 [[bin]]
 name = "fibonacci"
 path = "src/fibonacci.rs"
+
+[[bin]]
+name = "stats"
+path = "src/stats.rs"
