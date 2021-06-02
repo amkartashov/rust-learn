@@ -4,7 +4,7 @@ use std::collections::HashMap;
 
 fn main() {
 
-    let len = 50;
+    let len = 24;
     let mut v = Vec::with_capacity(len);
 
     for _ in 1..=v.capacity() {
@@ -33,7 +33,12 @@ fn median (v: &[i32]) -> Option<i32> {
     sorted.copy_from_slice(v);
     sorted.sort_unstable();
     println!("Sorted: {:?}", sorted);
-    Some(sorted[v.len()/2])
+
+    if v.len() % 2 == 0 {
+        Some((sorted[v.len() / 2 - 1] + sorted[v.len() / 2]) / 2)
+    } else {
+        Some(sorted[v.len()/2])
+    }
 }
 
 fn mode (v: &[i32]) -> Vec<i32> {
