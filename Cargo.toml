@@ -25,3 +25,7 @@ path = "src/fibonacci.rs"
 [[bin]]
 name = "stats"
 path = "src/stats.rs"
+
+[[bin]]
+name = "piglatin"
+path = "src/piglatin.rs"
