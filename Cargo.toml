@@ -29,3 +29,7 @@ path = "src/stats.rs"
 [[bin]]
 name = "piglatin"
 path = "src/piglatin.rs"
+
+[[bin]]
+name = "departments"
+path = "src/departments.rs"
