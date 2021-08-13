@@ -2,7 +2,7 @@
 const VOWELS: [char; 10] = ['a','e','i','o','u','A','E','I','O','U'];
 
 fn main() {
-    let s = String::from("f");
+    let s = String::from("fxcvbxc");
     println!("{} converted: {}", s, piglatin(&s));
 }
 
