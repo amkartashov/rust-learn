@@ -3,6 +3,7 @@
 members = [
     "departments",
     "fibonacci",
+    "hello",
     "piglatin",
     "stats",
 ]
